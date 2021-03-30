@@ -36,7 +36,6 @@ public class LEVEL01CONTROLLER : MonoBehaviour
             Debug.Log("New high score: " + currentScore);
             currentScoreView.text = "HighScore";
         }
-        SceneManager.LoadScene("MainMenu");
     }
 
    public void IncreaseScore(int scoreIncrease)
