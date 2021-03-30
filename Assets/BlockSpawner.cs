@@ -30,7 +30,7 @@ public class BlockSpawner : MonoBehaviour
         {
             SpawnBlocks();
 
-            timeToSpawn = Time.time + 5;
+            timeToSpawn = Time.time + 3;
 
 
         }
