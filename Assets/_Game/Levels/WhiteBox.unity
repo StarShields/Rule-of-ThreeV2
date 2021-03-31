@@ -826,6 +826,7 @@ MonoBehaviour:
   blocks: []
   lives: 3
   movement: {fileID: 2431647743301842908}
+  block: {fileID: 7511517057506822599, guid: 1fc838e3cc166564ba2615d8800d8e5b, type: 3}
   score: 0
   streak: 0
   scoreIncrease: 3
@@ -3451,6 +3452,7 @@ MonoBehaviour:
   blocks: []
   lives: 3
   movement: {fileID: 7180100985524690992}
+  block: {fileID: 0}
   score: 0
   streak: 0
   scoreIncrease: 0

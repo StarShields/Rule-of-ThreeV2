@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class block : MonoBehaviour
 {
+    public ParticleSystem effect;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,12 +14,15 @@ public class block : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Destroy(gameObject, 12f);
-       // if(transform.position.y < -2f)
-       // {
-          //  Destroy(gameObject);
-        //}
+   
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (tag == "Player");
+       // Destroy(this.gameObject, 4f);
+        effect.Play();
     }
 
 }

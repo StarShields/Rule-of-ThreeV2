@@ -9,14 +9,16 @@ public class PlayerCollision : MonoBehaviour
     public int lives;
 
     public playermovement movement;
-
+    public GameObject block;
     public int score;
     public bool streak = false;
     public int scoreIncrease;
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+     
 
+  
         if(collisionInfo.collider.tag == "obstacle")
         {
             Debug.Log("We hit an obstacle");
@@ -28,15 +30,15 @@ public class PlayerCollision : MonoBehaviour
 
             streak = false; 
         }
-
         if(collisionInfo.collider.tag == "Correct door")
         {
+
             Debug.Log("score!");
-            //streak = true;
-            LEVEL01CONTROLLER level
-          = gameObject.GetComponent<LEVEL01CONTROLLER>();
+
+           block.SetActive(true);
+           
+
             score = score + 3; 
-            level.IncreaseScore(scoreIncrease);
             if(streak)
             {
             //    score = score + scoreIncrease();
